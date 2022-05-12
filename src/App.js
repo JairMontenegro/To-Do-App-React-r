@@ -1,5 +1,5 @@
 import './App.css';
-import Task from './components/tasks.js'
+import Tasks from './components/Tasks.js'
 import Footer from './components/footer.js'
 
 
@@ -9,7 +9,7 @@ function App() {
 
       <div className='wrapper'>
       <header>To-Do List</header>
-      <Task/>
+      <Tasks/>
       {/* <ul className="todoList">
             {/* <!-- addd --> */}
         {/* </ul> */} 

@@ -14,3 +14,22 @@
   border-radius: 3px;
   padding-left: 15px;
 }
+.inputField .container-icons{
+  width: 60px;
+  height: 100%;
+  background: #019c28;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.8;
+  color: #fff;
+  border-radius: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.inputField .container-icons.active {
+  opacity: 1;
+  pointer-events: auto;
+}

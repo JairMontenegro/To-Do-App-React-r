@@ -1,18 +1,20 @@
 import React from 'react';
 import '../styles-shets/tasks.css'
-import { BsFillFilePlusFill } from "react-icons/bs";
+import { BsPlusLg } from "react-icons/bs";
 
-const Task = ({text}) => {
+const Tasks = ({text, done}) => {
  return (
    <div className="inputField">
     <input type="text" placeholder="Add Your new task" />
     {text}
-    <div >
-        <BsFillFilePlusFill className="add-icon"/>
+    <div className='container-icons'>
+        <BsPlusLg className="add-icon"/>
     </div>
    </div>
  );
 }
 
 
-export default Task
+export default Tasks
+
+
