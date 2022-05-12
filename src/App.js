@@ -1,5 +1,6 @@
 import './App.css';
-import Footer from "./components/footer.js"
+import Task from './components/tasks.js'
+import Footer from './components/footer.js'
 
 
 function App() {
@@ -8,13 +9,10 @@ function App() {
 
       <div className='wrapper'>
       <header>To-Do List</header>
-      <div className="inputField">
-            <input type="text" placeholder="Add Your new todo"/>
-            <button><i className="fas fa-plus"></i></button>
-        </div>
-        <ul className="todoList">
+      <Task/>
+      {/* <ul className="todoList">
             {/* <!-- addd --> */}
-        </ul>
+        {/* </ul> */} 
 
         <div className="footer">
             <span>You have <span className="pendingNumb"></span> pending tasks </span>
