@@ -3,14 +3,16 @@ import '../styles-shets/tasks.css'
 import { BsPlusLg } from "react-icons/bs";
 
 const Tasks = ({text, done}) => {
- return (
-   <div className="inputField">
-    <input type="text" placeholder="Add Your new task" />
+ 
+  return (
+  <div className='task-container'>
+    <div className='task-test'>
     {text}
+    </div>
     <div className='container-icons'>
         <BsPlusLg className="add-icon"/>
     </div>
-   </div>
+  </div>
  );
 }
 
