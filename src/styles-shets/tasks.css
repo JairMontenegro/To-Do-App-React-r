@@ -1,1 +1,26 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* task done */
+.task-container.done {
+background-color: #128c7e;
+text-decoration: line-through;
+}
