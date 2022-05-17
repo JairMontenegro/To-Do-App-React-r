@@ -9,6 +9,7 @@ const TaskList = () => {
 const [tasks, setTask] = useState([])
 
 const addTask = task => {
+  console.log(task)
   if(task.text.trim()){
     task.text = task.text.trim();
 
@@ -19,17 +20,23 @@ const addTask = task => {
   
 }
 
+const deleteTask  = id => {
+  const taskUpdate = tasks.filter(task => task.id !== id)
+  setTask(taskUpdate)
+}
+
     return (
     <>
     <FormTask onSubmit={addTask} />
     <div className='container-task-list'>
       {
-        tasks.map((tasks) => 
+        tasks.map((task) => 
         <Tasks
-        key={tasks.id}
-        id={tasks.id}
-        text={tasks.text}
-        done={tasks.done}
+        key={task.id}
+        id={task.id}
+        text={task.text}
+        done={task.done}
+        deleteTask={deleteTask}
         />
 
         )

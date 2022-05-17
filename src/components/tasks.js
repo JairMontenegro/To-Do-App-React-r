@@ -4,22 +4,21 @@ import { BsTrash } from "react-icons/bs";
 
 
 const Tasks = ({id, text, done, taskCompleted, deleteTask}) => {
- 
+
   return (
   <div className={ done ? 'task-container done' : 'task-container'}>
     <div className='task-text'
-    onClick ={()=> taskCompleted(id)}>
-
+    onClick ={() => taskCompleted(id)}>
       {text}
     </div>
     <div
     className='container-icons'
     onClick={()=> deleteTask(id)}>
-        <BsTrash className='delete-icon'/>
+    <BsTrash className='delete-icon' />
         
     </div>
   </div>
- );
+);
 }
 
 

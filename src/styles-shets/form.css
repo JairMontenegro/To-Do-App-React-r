@@ -34,7 +34,7 @@ padding-left: 15px;
   pointer-events: none;
 }
 
-/* .form-task .add-icon.active {
+.form-task .add-icon.active {
   opacity: 1;
   pointer-events: auto;
-} */
+}

@@ -1,5 +1,5 @@
 
-  .task-text{
+  .task-container{
     height: 45px;
     line-height: 45px;
     position: relative;
@@ -13,30 +13,14 @@
 
 
 .delete-icon{
-  position: absolute;
-  right: -45px;
-  color: #fff;
-  width: 45px;
-  text-align: center;
-  background: #e74c3c;
-  border-radius: 0 3px 3px 0;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.delete-icon:hover  {
+    right: 0px;
+  }
 
 
 /* task done */
