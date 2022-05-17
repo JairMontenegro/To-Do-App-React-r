@@ -3,7 +3,7 @@ import '../styles-shets/form.css'
 import { BsPlusLg } from "react-icons/bs";
 import { v4 as uuidv4 } from 'uuid';
 
-const FormTask = () => {
+const FormTask = ({onSubmit}) => {
 
     const [input, setInput] = useState('')
 
@@ -16,17 +16,17 @@ const FormTask = () => {
 
     const setSent = e =>{
       e.preventDefault();
-      console.log("enviando formulario…");
         
       const newTask = {
           id : uuidv4(),
           text:input,
-          done:false;
+          done:false,
         }
-
+      
+        onSubmit(newTask)
+      
     }
 
-   
 
     return(
         <form 

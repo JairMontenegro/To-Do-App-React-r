@@ -1,6 +1,4 @@
 .container-task-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 15px;
+    max-height: 250px;
+    overflow-y: auto;
 }

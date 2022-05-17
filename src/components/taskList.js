@@ -8,18 +8,26 @@ const TaskList = () => {
 
 const [tasks, setTask] = useState([])
 
-const addTask = tasks => {
-  console.log("agrega tarea")
-  console.log(tasks)
+const addTask = task => {
+  if(task.text.trim()){
+    task.text = task.text.trim();
+
+      const taskUpdate =[task, ...tasks];
+      setTask(taskUpdate)
+    
+  }
+  
 }
 
     return (
     <>
-    <FormTask/>
+    <FormTask onSubmit={addTask} />
     <div className='container-task-list'>
       {
         tasks.map((tasks) => 
         <Tasks
+        key={tasks.id}
+        id={tasks.id}
         text={tasks.text}
         done={tasks.done}
         />
