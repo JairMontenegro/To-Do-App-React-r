@@ -1,19 +1,22 @@
 import React from 'react';
 import '../styles-shets/tasks.css'
-import { BsPlusLg } from "react-icons/bs";
 import { BsTrash } from "react-icons/bs";
 
 
-const Tasks = ({text, done}) => {
+const Tasks = ({id, text, done, taskCompleted, deleteTask}) => {
  
   return (
   <div className={ done ? 'task-container done' : 'task-container'}>
-    <div className='task-text'>
+    <div className='task-text'
+    onClick ={()=> taskCompleted(id)}>
+
       {text}
     </div>
-    <div className='container-icons'>
+    <div
+    className='container-icons'
+    onClick={()=> deleteTask(id)}>
         <BsTrash className='delete-icon'/>
-        <BsPlusLg className="add-icon"/>
+        
     </div>
   </div>
  );

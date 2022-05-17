@@ -1,6 +1,6 @@
 import './App.css';
-import Tasks from './components/Tasks.js'
 import Footer from './components/footer.js'
+import TaskList from './components/taskList';
 
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
     <div className="app-todo">
     <div className='task-list'>
       <header>To-Do App</header>
-      </div>
-
+    <TaskList/>
+    </div>
     <Footer/>
     </div>
   );
