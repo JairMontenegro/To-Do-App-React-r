@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles-shets/form.css'
 import { BsPlusLg } from "react-icons/bs";
+import { v4 as uuidv4 } from 'uuid';
 
 const FormTask = () => {
 
@@ -8,22 +9,29 @@ const FormTask = () => {
 
 
     const setChange = e =>{
-console.log('writing....')
-
+    setInput(e.target.value)
+  
 
 }
 
     const setSent = e =>{
-        const newTask ={
-            id:'345456',
-            text:'su puta madre sabe programar', 
+      e.preventDefault();
+      console.log("enviando formulario…");
+        
+      const newTask = {
+          id : uuidv4(),
+          text:input,
+          done:false;
         }
+
     }
 
    
 
     return(
-        <form  className = 'form-task'>
+        <form 
+        className = 'form-task'
+        onSubmit={setSent}>
             <input 
             className='input-task'
             type='text'
@@ -31,7 +39,7 @@ console.log('writing....')
             name='text'
             onChange={setChange}
             />
-            <BsPlusLg className="add-icon"/>
+            <button><BsPlusLg className='add-icon'/></button>
         </form>
 
     )

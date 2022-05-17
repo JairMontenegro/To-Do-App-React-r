@@ -15,6 +15,10 @@ border-radius: 3px;
 padding-left: 15px;
 }
 
+.form-task button{
+  outline: none;
+  border: none;
+}
 
 .add-icon{
   width: 60px;
@@ -26,12 +30,11 @@ padding-left: 15px;
   cursor: pointer;
   opacity: 0.6;
   padding:12px;
-  pointer-events: none;
   stroke-width: 1;
-  
+  pointer-events: none;
 }
 
-.form-task .add-icon.active {
+/* .form-task .add-icon.active {
   opacity: 1;
   pointer-events: auto;
-}
+} */
