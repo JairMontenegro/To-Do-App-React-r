@@ -12,7 +12,6 @@ const addTask = task => {
   console.log(task)
   if(task.text.trim()){
     task.text = task.text.trim();
-
       const taskUpdate =[task, ...tasks];
       setTask(taskUpdate)
     
@@ -25,6 +24,16 @@ const deleteTask  = id => {
   setTask(taskUpdate)
 }
 
+const taskCompleted = id => { 
+  const taskUpdate = tasks.map(task => {
+    if (task.id === id){
+      task.done = !task.done;
+    }
+    return task
+  })
+  setTask(taskUpdate);
+} 
+
     return (
     <>
     <FormTask onSubmit={addTask} />
@@ -36,6 +45,7 @@ const deleteTask  = id => {
         id={task.id}
         text={task.text}
         done={task.done}
+        taskCompleted={taskCompleted}
         deleteTask={deleteTask}
         />
 
