@@ -1,14 +1,16 @@
 # TO DO APP REFACTORED WITH REACT || TO-DO APP REFACTORIZADA CON REACT
 
-![CAPTURE](/Todo%20App.png "APP SCREENSHOT")
+![CAPTURE](/todo%20app%20react.png "APP SCREENSHOT")
 
 ---
 
-:en:
+:us:
+
+---
 
 [TO-DO APP REACT](https://jairmontenegro.github.io/To-Do-App-React-r/ "click to enter")
 
-This is a project I use to learn react JS. The goal is to use Destructuring assignment, ternary conditional and useState hook, and also i learned to use an open-source library, react-icons.
+This is a project I used to learn react JS. The goal is to use Destructuring assignment, ternary conditional and useState hook, and also i learned to use an open-source library, react-icons.
 
 This project was built with vanilla javascript and then refactored with react. You can see that project in the link below.
 
